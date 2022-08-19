@@ -25,18 +25,26 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Restaurantly - v3.8.0
-  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
+<style>
+p{
+  font-family: roboto_mono;
+  font-size: 22px;
+}
+.li{
+  font-family: roboto_mono;
 
-<body>
+}
+</style>
+
+<body >
 
   <!-- ======= Top Bar ======= -->
   
@@ -66,10 +74,11 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a href="login3.html" class="book-a-table-btn scrollto d-none d-lg-flex">SIGN IN</a>
+      <a href="login2.html" class="book-a-table-btn scrollto d-none d-lg-flex">SIGN IN</a>
 
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
@@ -103,8 +112,8 @@
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
             <h3>ABOUT US</h3>
             <br><br>
-            <p style=" font-family: Verdana, sans-serif;">
-            The NFTadda is an Indian based  <br>
+            <p>
+            The NFT adda is an Indian based  <br>
    community-driven platform introducing NFT's collaborating with various brands and artists to create NFTs
   Enhancing artists to promote their traditional artworks into the digital block chain technology
             </p>
@@ -167,45 +176,44 @@
     
 
     <!-- ======= Specials Section ======= -->
-    <section id="specials" class="specials">
+    <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <p>Join Our Server</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          
-          <div class="col-lg-9 mt-4 mt-lg-0">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="tab-1">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                
-                    <p style=" font-family: Verdana, sans-serif;">
+        <div class="row">
+          <div class="col-lg-4 order-1 order-lg-2" style="padding-left: 150px; padding-top: 180px;"  >
+            <div class="about-img1">
+              <a href="https://discord.gg/u79cZgmNnh"><img src="discord.png" alt="" height="200" width="275"></a>
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>Join Our Server</h3>
+            <br><br>
+          <p>
   Connect with founders and developers<br>
   <hr>
+  </p>
+  <p>
   Make New friends and meet our artists <br>
   <hr>
-  Get updates and upcoming projects
-  <hr>
-  Get access to Master Minds <br>
-  <hr>
-  Access to participate in Raffles and contents
+</p>
+<p>
+  Get updates and upcoming projects <br>
   <hr>
 </p>
-                  </div>
-                  <div class="col-lg-2 text-center order-2 order-lg-2">
-                    <img src="discord.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-            </div>
+<p>
+  Get access to Master Minds <br>
+  <hr>
+</p>
+<p>
+  Access to participate in Raffles and contents <br>
+  <hr>
+</p>
           </div>
         </div>
 
       </div>
-    </section><!-- End Specials Section -->
+    </section>
+    <!-- End Specials Section -->
 
     <!-- ======= Events Section ======= -->
     <section id="events" class="events">
@@ -224,20 +232,21 @@
                 
 				
 				 <div class="col-lg-3">
-                  <img src="assets/img/pier.jpg" class="img-fluid" alt="">
+                  <a href="explore.html"><img src="soldier1.jpg" class="img-fluid" alt=""></a>
                 </div>
 				 <div class="col-lg-3">
-                  <img src="assets/img/sky.jpg" class="img-fluid" alt="">
+                  <img src="paw society.jpg" class="img-fluid" alt="">
                 </div>
                  <div class="col-lg-3">
-                  <img src="assets/img/starfish.jpg" class="img-fluid" alt="">
+                  <img src="coin.png" class="img-fluid" alt="">
                 </div>
 				 <div class="col-lg-3">
-                  <img src="assets/img/rain.jpg" class="img-fluid" alt="">
+                  <img src="angelic.jpg" class="img-fluid" alt="">
                 </div>
               </div>
-            </div><!-- End testimonial item -->
-
+            </div>
+            <!-- End testimonial item -->
+<!-- 
             <div class="swiper-slide">
               <div class="row event-item">
                
@@ -253,10 +262,10 @@
 				 <div class="col-lg-3">
                   <img src="assets/img/nft1.jpg" class="img-fluid" alt="">
                 </div>
-              </div>
+              </div> -->
             </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
               <div class="row event-item">
                <div class="col-lg-3">
                   <img src="assets/img/wint.jpg" class="img-fluid" alt="">
@@ -272,98 +281,401 @@
                 </div>
                
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
+            <!-- End testimonial item -->
 
           </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End Events Section -->
+    </section>
+    <!-- End Events Section -->
 
   
 
     <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery">
+    <section id="gallery" class="gallery" style="margin-inline:100px;">
 
-      <div class="container" data-aos="fade-up">
+      <div class="container" data-aos="fade-up" >
         <div class="section-title">
           <h2>Gallery</h2>
           <p>MINDMAP</p>
         </div>
       </div>
 
-     <div class="row">
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg" style="padding-top:150px;">
+    
+      <!-- Modal content-->
+      <div class="modal-content modal-lg" >
+        <div class="modal-header">
+          
+          <h4 class="modal-title" style="color:black;">Vision & Value </h4>
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body" style="color:black;">
+		<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+          <p>                
+		  We are the artists of the new era living between the blurred lines of the traditional and digital arts as 
+		  they are beginning to blend by innovative phases of virtual reality. 
+		  Our vision is to bring together a community of individuals, especially enthusiasts in the visual form of arts <br>
+		  who aren’t afraid to push the boundaries, challenge the status quo and bring an impact on web2 culture. 
+</p>
+
+</div>
+<div class="col-lg-5 order-1 order-lg-2">
+		<img
+      src="vision.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water" height="200" width="275" data-toggle="modal" data-target="#myModal"
+    />
+	</div>
+        </div>
+		 
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog modal-lg" style="padding-top:150px;">
+    
+      <!-- Modal content-->
+      <div class="modal-content modal-lg" >
+        <div class="modal-header">
+          
+          <h4 class="modal-title" style="color:black;">Community </h4>
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body" style="color:black;">
+		<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+                       <p>  Everything starts and ends with the community. From the introduction of ideas and concepts till the execution, we believe in giving importance to the community and taking inputs from our special members who involve their time in building our platform for the cause and purpose regardless of their benefit. 
+ </p>
+</div>
+<div class="col-lg-5 order-1 order-lg-2">
+		<img
+      src="community.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water" height="250" width="340" data-toggle="modal" data-target="#myModal"
+    />
+	</div>
+
+   </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog modal-lg" style="padding-top:150px;">
+    
+      <!-- Modal content-->
+      <div class="modal-content modal-lg" >
+        <div class="modal-header">
+          
+          <h4 class="modal-title" style="color:black;">Trust the process </h4>
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body" style="color:black;">
+         <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+
+<p>
+ Good things take time. Decentralized movements can’t turn corners as quickly as centralized movements, and that’s both a blessing and a curse. Decentralized doesn’t mean there can’t be leaders. The core team will provide guard rails and resources for every project to get executed with a workflow following ethics and principles which are grounded by the company. 
+</p>
+</div>
+<div class="col-lg-5 order-1 order-lg-2">
+		<img
+      src="trust.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water" height="250" width="340" data-toggle="modal" data-target="#myModal"
+    />
+	</div>
+
+   </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+ <!-- Modal -->
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog modal-lg" style="padding-top:150px;">
+    
+      <!-- Modal content-->
+      <div class="modal-content modal-lg" >
+        <div class="modal-header">
+          
+          <h4 class="modal-title" style="color:black;">Metaverse </h4>
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body" style="color:black;">
+		<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+          <p>               <b>Gallery : </b>We started working on virtual art galleries and made plans to develop a virtual gallery for exhibits of our projects with authentic features to add in better experience unlike already on-going artificial galleries. 
+
+
+</p></div>
+
+<div class="col-lg-5 order-1 order-lg-2">
+		<img
+      src="metaverse.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water" height="250" width="340" data-toggle="modal" data-target="#myModal"
+    />
+	</div>
+   </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog modal-lg" style="padding-top:150px;">
+    
+      <!-- Modal content-->
+      <div class="modal-content modal-lg" >
+        <div class="modal-header">
+          
+          <h4 class="modal-title" style="color:black;">Physical world </h4>
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body" style="color:black;">
+		<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+          <p>               <b>IRL Events: </b></p>
+
+ <p> Meet-ups, exhibits, art-film festivals, and more give us the opportunity to expand our reach beyond a purely digital experience. </p>
+</div>
+<div class="col-lg-5 order-1 order-lg-2">
+		<img
+      src="phw.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water" height="250" width="340" data-toggle="modal" data-target="#myModal"
+    />
+	</div>
+
+
+
+
+
+   </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal5" role="dialog">
+    <div class="modal-dialog modal-lg" style="padding-top:150px;">
+    
+      <!-- Modal content-->
+      <div class="modal-content modal-lg" >
+        <div class="modal-header">
+          
+          <h4 class="modal-title" style="color:black;">Merchandise </h4>
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body" style="color:black;">
+       <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+
+ <p>Merchandise :  In progress </p>
+
+
+</p>
+</div>
+<div class="col-lg-5 order-1 order-lg-2">
+		<img
+      src="merchandise.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water" height="250" width="340" data-toggle="modal" data-target="#myModal"
+    />
+	</div>
+   </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal6" role="dialog">
+    <div class="modal-dialog modal-lg" style="padding-top:150px;">
+    
+      <!-- Modal content-->
+      <div class="modal-content modal-lg" >
+        <div class="modal-header">
+          
+          <h4 class="modal-title" style="color:black;">PARTNERSHIP </h4>
+		  <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body" style="color:black;">
+		<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+          <p> We’ve locked in partnerships with utilities which will soon be announced. And we’re always looking to collaborate with new brands who align with our vision and aesthetics.we are looking forward to explore various governance of business structures in crypto and reiterating on areas that need improvement, before moving onto bigger experiments and provide utilities to our buyers and the community. 
+
+</p>
+</div>
+<div class="col-lg-5 order-1 order-lg-2">
+		<img
+      src="partnership.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water" height="250" width="340" data-toggle="modal" data-target="#myModal"
+    />
+	</div>
+   </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+     <!-- <div class="row">
   <div class="col-lg-3 col-md-3 mb-3 mb-lg-0">
     <img
-      src="assets/img/pier.jpg"
+      src="assets/img/vision.png"
       class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water" height="250" width="340"
+      alt="Boat on Calm Water" height="250" width="340" data-toggle="modal" data-target="#myModal"
+    />
+	 
+<br><br>
+    <img
+      src="assets/img/communityy.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape" height="550" width="340" data-toggle="modal" data-target="#myModal1"
+    />
+  </div>
+
+ 
+
+   <div class="col-lg-3 col-md-3 mb-3 mb-lg-0">
+    <img
+      src="assets/img/trust.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Mountains in the Clouds" height="450" width="340" data-toggle="modal" data-target="#myModal2"
     />
 <br><br>
     <img
-      src="assets/img/rain.jpg"
+      src="assets/img/metaverse.png"
       class="w-100 shadow-1-strong rounded mb-4"
-      alt="Wintry Mountain Landscape" height="550" width="340"
+      alt="Boat on Calm Water" height="350" width="340" data-toggle="modal" data-target="#myModal3"
     />
   </div>
 
    <div class="col-lg-3 col-md-3 mb-3 mb-lg-0">
     <img
-      src="assets/img/rain.jpg"
+      src="assets/img/phw.png"
       class="w-100 shadow-1-strong rounded mb-4"
-      alt="Mountains in the Clouds" height="450" width="340"
+      alt="Waves at Sea" height="370" width="340" data-toggle="modal" data-target="#myModal4"
     />
 <br><br>
     <img
-      src="assets/img/starfish.jpg"
+      src="assets/img/merchandise.png"
       class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water" height="350" width="340"
-    />
-  </div>
-
-   <div class="col-lg-3 col-md-3 mb-3 mb-lg-0">
-    <img
-      src="assets/img/beach.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Waves at Sea" height="370" width="340"
-    />
-<br><br>
-    <img
-      src="assets/img/pier.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Yosemite National Park"  height="430" width="200px"
+      alt="Waves"  height="430"  width="500"  data-toggle="modal" data-target="#myModal5"
     />
   </div>
  <div class="col-lg-3 col-md-3 mb-3 mb-lg-0">
     <img
-      src="assets/img/sky.jpg"
+      src="assets/img/partnership.png"
       class="w-100 shadow-1-strong rounded mb-4"
-      alt="Waves at Sea" height="370" width="350"
+      alt="Waves at Sea" height="370" width="350" data-toggle="modal" data-target="#myModal6"
     />
- <img src="assets/img/wint.jpg"
+ <br><br>
+    <img
+      src="assets/img/merchandise.png"
       class="w-100 shadow-1-strong rounded mb-4"
-      alt="Waves at Sea" height="450" width="350"
+      alt="Waves"  height="430"  width="500"  data-toggle="modal" data-target="#myModal5"
     />
     
-  </div>
+  </div> -->
 
 </div>
-    </section><!-- End Gallery Section -->
+    
+
+    <div class="row">
+      <div class="col-lg-3 col-md-3 mb-3 mb-lg-0">
+        <img
+          src="vision.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Boat on Calm Water" height="250" width="370" data-toggle="modal" data-target="#myModal"
+        />
+    <br><br>
+        <img
+          src="community.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Wintry Mountain Landscape" height="380" width="370" data-toggle="modal" data-target="#myModal1"
+        />
+      </div>
+    
+       <div class="col-lg-3 col-md-3 mb-3 mb-lg-0">
+        <img
+          src="trust.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Mountains in the Clouds" height="350" width="370" data-toggle="modal" data-target="#myModal2"
+        />
+    <br><br>
+        <img
+          src="metaverse.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Boat on Calm Water" height="280" width="380" data-toggle="modal" data-target="#myModal3"
+        />
+      </div>
+    
+       <div class="col-lg-3 col-md-3 mb-3 mb-lg-0">
+        <img
+          src="phw.png"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Waves at Sea" height="350" width="370" data-toggle="modal" data-target="#myModal4"
+        />
+    <br><br>
+        <img
+          src="partnership.jpg"
+          class="w-180 shadow-1-strong rounded mb-4"
+          alt="Yosemite National Park"  height="280" width="600" data-toggle="modal" data-target="#myModal6"
+        />
+      </div>
+     <div class="col-lg-3 col-md-3 mb-3 mb-lg-0">
+        <img
+          src="merchandise.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Waves at Sea" height="350" width="350" data-toggle="modal" data-target="#myModal5"
+        />
+      </div>
+    
+    </div>
+  </section>
+    <!-- End Gallery Section -->
 
     <!-- ======= Chefs Section ======= -->
-    <section id="chefs" class="chefs">
+    <!-- <section id="chefs" class="chefs" style="margin-inline:100px ;">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>FAQ's</h2>
           <p>Frequently Asked Questions</p>
         </div>
-        <div class="accordion" id="accordionExample">
+        <div class="accordion" id="accordionExample" style="padding-bottom: 0px;">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                What is an NFT?
+                <h4><strong>What is an NFT? </strong></h4>
               </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -401,75 +713,80 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <div class="accordion-item" style="background-color: grey;">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" >
                 What is a crypto wallet?
               </button>
             </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <strong>
                   A cryptocurrency wallet is an app that allows cryptocurrency and NFT users to store and retrieve their digital assets safely and easily, allowing them to send and receive. </strong>
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Where can you list your NFT ?  
+
+          <div class="accordion-item" style="background-color: grey;">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" >
+                Where can you list your NFT ?
               </button>
             </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>Opensea. </strong>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Where will be the updates or announcements posted? 
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <strong>
-                  One can find latest updates in #announcements channel in our official discord server. </strong>
+                  <strong>Opensea. </strong>
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                How long will “The NFT Adda’ provide Utilities to the project? 
+
+          <div class="accordion-item" style="background-color: grey;">
+            <h2 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" >
+                Where will be the updates or announcements posted?
               </button>
             </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <strong>
-                  Depends upon the project launched and looking with a scope of DAO based projects where holders will possess rights to vote upon many segments.  </strong>
+                  One can find latest updates in #announcements channel in our official discord server.</strong>
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+
+          <div class="accordion-item" style="background-color: grey;">
+            <h2 class="accordion-header" id="headingSeven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" >
+                How long will “The NFT Adda’ provide Utilities to the project?
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>
+                  Depends upon the project launched and looking with a scope of DAO based projects where holders will possess rights to vote upon many segments.</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item" style="background-color: grey;">
+            <h2 class="accordion-header" id="headingEight">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight" >
                 Can anyone submit their works as NFTs? 
               </button>
             </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <strong>
                   We welcome any form of visual artist (both traditional and digital) to submit their works or contact us so that we can help promote their artworks by minting them.
-We design projects with concepts which help a particular cause or entertain a trend further forming a community with a group of individuals like minded towards one concept creating collaborations and work opportunities ahead. 
-Before launching a project, there will be announcements regarding upcoming projects and brainstorm sessions in our discord where members are allowed to promote ideas related to the concept and we collaborate with artists whose work shall speak for the concept therefore made </strong>
+                  We design projects with concepts which help a particular cause or entertain a trend further forming a community with a group of individuals like minded towards one concept creating collaborations and work opportunities ahead. 
+                  Before launching a project, there will be announcements regarding upcoming projects and brainstorm sessions in our discord where members are allowed to promote ideas related to the concept and we collaborate with artists whose work shall speak for the concept therefore made</strong>
               </div>
             </div>
           </div>
-        </div>
       </div>
-    </section><!-- End Chefs Section -->
+    </section> -->
+    <!-- End Chefs Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -584,9 +901,9 @@ Before launching a project, there will be announcements regarding upcoming proje
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="faq.html">FAQ's</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="terms.html">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="privacy.html">Privacy policy</a></li>
             </ul>
           </div>
 
@@ -639,6 +956,15 @@ Before launching a project, there will be announcements regarding upcoming proje
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
     <link rel="icon" href="assets/img/nftlogo.png" type="image/gif" sizes="16x16">
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Gigaland - NFT Marketplace Website Template" name="description" />
+    <meta content="THE NFT ADDA" name="description" />
     <meta content="" name="keywords" />
     <meta content="" name="author" />
     <!-- CSS Files
@@ -40,9 +40,6 @@
                                     </div>
                                     <!-- logo close -->
                                 </div>
-                                <div class="de-flex-col">
-                                    <input id="quick_search" class="xs-hide" name="quick_search" placeholder="search item here..." type="text" />
-                                </div>
                             </div>
                             <div class="de-flex-col header-col-mid">
                                 <!-- mainmenu begin -->
@@ -60,16 +57,19 @@
                                         <a href="explore.html">Projects<span></span></a>
                                     </li>
                                     <li>
-                                        <a href="explore.html">Mindmap<span></span></a>
+                                        <a href="index.html">Mindmap<span></span></a>
                                     </li>
                                     <li>
-                                        <a href="explore.html">Profile<span></span></a>
+                                        <a href="profile.html">Profile<span></span></a>
                                     </li>
                                     <li>
-                                        <a href="explore.html">Contact<span></span></a>
+                                        <a href="index.html">Contact<span></span></a>
                                     </li>
                                 </ul>
                                 <!-- mainmenu close -->
+                                <div class="menu_side_area">
+                                    <span id="menu-btn"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
         <div class="no-bottom no-top" id="content">
             <div id="top"></div>
 			
-			<section class="full-height relative no-top no-bottom vertical-center" data-bgimage="url(images/background/bg3.jpg) top" data-stellar-background-ratio=".5">
+			<section class="full-height relative no-top no-bottom vertical-center" data-bgimage="url(hero-bg5.jpg) top" data-stellar-background-ratio=".5">
                 <div class="overlay-gradient t50">
 					<div class="center-y relative">
 						<div class="container">
@@ -91,18 +91,19 @@
 									<div class="box-rounded padding40">
 										<h3 class="mb10">Sign In</h3>
 										<p>Login using an existing account or create a new account <a href="register.html">here<span></span></a>.</p>
-										<form name="contactForm" id='contact_form' class="form-border" method="post" action='blank.php'>
+										<!-- <form name="contactForm" id='contact_form' class="form-border" method="post" action='blank.php'> -->
 
-                                            <div class="field-set">
+<!--                                            <div class="field-set">
                                                 <input type='text' name='email' id='email' class="form-control" placeholder="username">
                                             </div>
 											
 											 <div class="field-set">
                                                 <input type='password' name='password' id='password' class="form-control" placeholder="password">
-                                            </div>
+                                            </div>-->
 											
 											<div class="field-set">
-												<input type='submit' id='send_message' value='Submit' class="btn btn-main btn-fullwidth color-2">
+											<!--	<input type='button' id='send_message' value='sign in' class="btn btn-main btn-fullwidth color-2">-->
+											<button id="login" class="btn btn-main btn-fullwidth color-2">Sign in</button>
 											</div>
 											
 											<div class="clearfix"></div>
@@ -113,10 +114,10 @@
                                         <ul class="list s3">
                                             <li>Login with:</li>
                                             <li><a href="#">Facebook</a></li>
-                                            <li><a href="">Google</a></li>
+                                            <li><a href="#">Google</a></li>
                                         </ul>
                                         <!-- social icons close -->
-                                </form>
+                                <!-- </form> -->
 									</div>
 								</div>
 							</div>
@@ -124,6 +125,7 @@
 					</div>
 				</div>
 			</section>		
+            
             </div>
             <!-- content close -->
 
@@ -138,6 +140,8 @@
                                 <li><a href="#">All NFTs</a></li>
                                 <li><a href="#">Art</a></li>
                                 <li><a href="#">Music</a></li>
+                                <li><a href="#">Domain Names</a></li>
+                                <li><a href="#">Virtual World</a></li>
                                 <li><a href="#">Collectibles</a></li>
                             </ul>
                         </div>
@@ -190,8 +194,8 @@
                         <div class="col-md-12">
                             <div class="de-flex">
                                 <div class="de-flex-col">
-                                    <a href="03_grey-index.html">
-                                        <span class="copy">&copy; Copyright 2022 - THE NFT ADDA</span>
+                                    <a href="index.html">
+                                        <span class="copy">&copy; Copyright 2022 - The Nft Adda</span>
                                     </a>
                                 </div>
                                 <div class="de-flex-col">
@@ -217,6 +221,102 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/designesia.js"></script>
+        
+	<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@toruslabs/torus-embed"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.js"></script>
+    <script>
+      (async function init() {
+        $("#login").hide();
+        $("#logout").hide();
+
+        const torus = new Torus();
+        window.torus = torus;
+
+        await torus.init(/*
+        // (Optional) Initialization options
+        {
+          // Customize login providers
+          loginConfig: {
+            google: {
+              clientId: "<YOUR GOOGLE CLIENT ID>",
+              ...
+            }
+          },
+          // Customize brand logo, colors, and translations
+          whitelabel: {
+            theme: {
+              isDark: false,
+              colors: {
+                torusBrand1: "#282c34",
+              },
+            },
+            defaultLanguage: "en",
+            logoDark: "https://tkey.surge.sh/images/Device.svg", // Dark logo for light background
+            logoLight: "https://tkey.surge.sh/images/Device.svg", // Light logo for dark background
+          }
+        }
+        */);
+
+        try {
+          const user = await torus.getUserInfo();
+          $("#text").text("Logged in as " + user.name + ".");
+          $("#logout").show();
+          await initWeb3();
+        } catch (error) {
+          $("#text").text("Didn't log in.");
+          $("#login").show();
+        }
+      })();
+
+      async function initWeb3() {
+        const web3 = new Web3(window.torus.provider);
+        const address = (await web3.eth.getAccounts())[0];
+        const balance = await web3.eth.getBalance(address);
+        localStorage.setItem("balance",balance);;
+        localStorage.setItem("address",address)
+        // $("#address").text("Address: " + address + ".");
+        // $("#balance").text("Balance: " + balance + ".");
+      }
+
+      $("#login").click(function (event) {
+        window.torus
+          .login()
+          .then(function () {
+            return initWeb3();
+          })
+          .then(function () {
+            return window.torus.getUserInfo();
+          })
+          .then(function (user) {
+            $("#text").text("Logged in as " + user.name + ".");
+            $("#error").hide();
+            $("#logout").show();
+            $("#login").hide();
+            localStorage.setItem("userDetails",JSON.stringify(user))
+            window.location.href="./profile.html"
+          })
+          .catch(function (err) {
+            $("#error").text(err.message);
+          });
+      });
+
+      $("#logout").click(function (event) {
+        window.torus
+          .logout()
+          .then(function (res) {
+            $("#text").text("Logged out.");
+            $("#address").text("");
+            $("#balance").text("");
+            $("#login").show();
+            $("#logout").hide();
+          })
+          .catch(function (err) {
+            $("#error").text(err.message);
+          });
+      });
+    </script>
+		
 </body>
 
 </html>
